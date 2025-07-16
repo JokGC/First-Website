@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-md-6 mb-4">
+            <!-- Card 1 -->
+            <div class="card" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='css/images/card1.png') }}" class="card-img-top"
+                    alt="Logo del canal">
+                <div class="card-body">
+                    <h5 class="card-title">Twitch</h5>
+                    <p class="card-text">Mi canal de Twitch en donde suelo realizar streams algunas veces.</p>
+                    <a href="https://www.twitch.tv/lejosexxx" class="btn btn-primary" target="_blank"
+                        rel="noopener noreferrer">Ir</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <!-- Card 2 -->
+            <div class="card" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='css/images/insta_logo.png') }}" class="card-img-top"
+                    alt="Logo del canal">
+                <div class="card-body">
+                    <h5 class="card-title">Instagram</h5>
+                    <p class="card-text">Mi perfil de Instagram por si gustan seguir.</p>
+                    <a href="https://www.instagram.com/jok_vicent?igsh=bzIzdmRxazZldXMw" class="btn btn-primary"
+                        target="_blank" rel="noopener noreferrer">Ir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
